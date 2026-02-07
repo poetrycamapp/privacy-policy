@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialite - PoetryCam</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f5f2;
+      --text: #1f1f1f;
+      --muted: #5b5b5b;
+      --card: #ffffff;
+      --accent: #2b2b2b;
+    }
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    h1, h2, h3 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: var(--accent);
+      line-height: 1.25;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 32px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #e6e1d9;
+      border-radius: 14px;
+      padding: 22px 24px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+    }
+    .meta {
+      color: var(--muted);
+      margin: 0 0 20px;
+      font-size: 0.95rem;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .contact {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Politique de confidentialite</h1>
+      <p class="meta"><strong>Date d&apos;entree en vigueur :</strong> 11 janvier 2026</p>
+
+      <p>
+        Cette Politique de confidentialite decrit les modalites de collecte, d&apos;utilisation,
+        de conservation et de protection des donnees personnelles des utilisateurs de l&apos;application
+        iOS PoetryCam (ci-apres, l&apos;App).
+      </p>
+
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        Le Responsable du traitement des donnees personnelles est :
+        <br>
+        Dario Sanatkar
+        <br>
+        Email de contact : <span class="contact">poetrycamapp@gmail.com</span>
+      </p>
+
+      <h2>2. Types de donnees traitees</h2>
+      <h3>2.1 Donnees fournies directement par l&apos;utilisateur</h3>
+      <ul>
+        <li>Adresse email (connexion via magic link ou Sign in with Apple).</li>
+        <li>Photographies prises via l&apos;App.</li>
+        <li>Textes generes (poemes).</li>
+        <li>Prompts utilises pour la generation des contenus.</li>
+        <li>Date et heure de creation des contenus.</li>
+      </ul>
+
+      <h3>2.2 Donnees traitees automatiquement</h3>
+      <ul>
+        <li>Identifiants techniques necessaires au fonctionnement de l&apos;App.</li>
+        <li>Donnees relatives a l&apos;affichage des annonces publicitaires (selon les parametres de l&apos;appareil).</li>
+      </ul>
+
+      <h3>2.3 Autorisations systeme</h3>
+      <p>L&apos;App peut demander les autorisations suivantes :</p>
+      <ul>
+        <li>Camera : pour permettre la prise de photographies.</li>
+        <li>Phototheque (Add-only) : pour enregistrer des images dans la bibliotheque de l&apos;appareil.</li>
+      </ul>
+      <p>L&apos;App n&apos;accede pas et n&apos;utilise pas :</p>
+      <ul>
+        <li>Geolocalisation</li>
+        <li>Contacts</li>
+        <li>Microphone</li>
+      </ul>
+
+      <h2>3. Finalites du traitement</h2>
+      <p>Les donnees personnelles sont traitees pour les finalites suivantes :</p>
+      <ul>
+        <li>Fournir les fonctionnalites principales de l&apos;App.</li>
+        <li>Generer des poemes via des systemes d&apos;intelligence artificielle.</li>
+        <li>Enregistrer et gerer les contenus de l&apos;utilisateur.</li>
+        <li>Permettre l&apos;authentification et la gestion du compte.</li>
+        <li>Permettre le partage d&apos;images sur des plateformes externes.</li>
+        <li>Afficher des annonces publicitaires.</li>
+        <li>Gerer des paiements optionnels.</li>
+        <li>Garantir la securite, la stabilite et la prevention des abus.</li>
+      </ul>
+
+      <h2>4. Base juridique du traitement</h2>
+      <p>Le traitement repose sur :</p>
+      <ul>
+        <li>L&apos;execution d&apos;un contrat (utilisation de l&apos;App).</li>
+        <li>Le consentement de l&apos;utilisateur (autorisations systeme et publicite, le cas echeant).</li>
+        <li>L&apos;interet legitime du Responsable (securite et prevention des usages impropres).</li>
+      </ul>
+
+      <h2>5. Traitement des images et utilisation de l&apos;IA</h2>
+      <p>Les photographies sont enregistrees localement sur l&apos;appareil de l&apos;utilisateur.</p>
+      <p>Les images et leurs metadonnees sont chargees sur des serveurs backend et stockees sur Supabase Storage et Supabase Database.</p>
+      <p>Pour generer le poeme, l&apos;App envoie a OpenAI l&apos;image (au format base64) et le prompt textuel.</p>
+      <p>OpenAI renvoie exclusivement le texte genere.</p>
+      <p>Les images ne sont pas utilisees a d&apos;autres fins que la generation du contenu demande.</p>
+
+      <h2>6. Partage des donnees avec des tiers</h2>
+      <p>Les donnees peuvent etre partagees avec les sujets suivants, exclusivement pour les finalites decrites :</p>
+      <ul>
+        <li>OpenAI - generation des contenus textuels.</li>
+        <li>Supabase - authentification, base de donnees et stockage.</li>
+        <li>Backend applicatif - gestion logique du service sur Render.com.</li>
+        <li>Google AdMob - fourniture d&apos;annonces publicitaires.</li>
+        <li>Stripe - gestion des paiements via checkout externe.</li>
+        <li>Apple - services d&apos;authentification et fonctionnalites systeme.</li>
+      </ul>
+      <p>Chaque sujet agit en qualite de responsable autonome ou de sous-traitant selon ses propres politiques.</p>
+
+      <h2>7. Transferts internationaux</h2>
+      <p>Certains fournisseurs peuvent traiter des donnees en dehors de l&apos;Espace economique europeen.</p>
+      <p>Dans ces cas, le transfert est effectue dans le respect des garanties prevues par la reglementation en vigueur.</p>
+
+      <h2>8. Conservation des donnees</h2>
+      <p>Les donnees sont conservees pendant toute la duree du compte.</p>
+      <p>La suppression du compte entraine l&apos;effacement des photos, des poemes et du profil.</p>
+      <p>Les eventuelles sauvegardes techniques sont conservees pour une periode limitee et proportionnee.</p>
+
+      <h2>9. Droits de l&apos;utilisateur</h2>
+      <p>L&apos;utilisateur peut :</p>
+      <ul>
+        <li>Acceder a ses propres donnees.</li>
+        <li>Demander leur rectification ou suppression.</li>
+        <li>Revoquer les autorisations accordees via les parametres de l&apos;appareil.</li>
+        <li>Supprimer definitivement son compte.</li>
+      </ul>
+      <p>Les demandes peuvent etre envoyees a poetrycamapp@gmail.com.</p>
+
+      <h2>10. Securite</h2>
+      <p>Le Responsable adopte des mesures techniques et organisationnelles appropriees pour proteger les donnees personnelles (connexions chiffrees, controle des acces).</p>
+      <p>Une securite absolue des systemes ne peut pas etre garantie.</p>
+
+      <h2>11. Modifications de la Politique de confidentialite</h2>
+      <p>Cette Politique de confidentialite peut etre mise a jour.</p>
+      <p>La version mise a jour sera rendue disponible avec indication de la nouvelle date d&apos;entree en vigueur.</p>
+
+      <h2>12. Contacts</h2>
+      <p>
+        Dario Sanatkar
+        <br>
+        Email de contact : <span class="contact">poetrycamapp@gmail.com</span>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
